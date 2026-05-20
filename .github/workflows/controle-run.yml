@@ -2,7 +2,7 @@ name: Test Runner
 on:
   push:
     branches:
-     - main
+      - main
 
 jobs:
   test-runner:
@@ -14,9 +14,9 @@ jobs:
       - name: Verification
         run: echo "Test de fonctionnement du Runner !"
 
-- name: tests de commandes
-  run: |
-    echo "Runner OK"
-    hostname
-    whoami
-    uname -a
+      - name: tests de commandes
+        run: |
+          echo "Runner OK"
+          hostname
+          whoami
+          uname -a
